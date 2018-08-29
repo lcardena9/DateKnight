@@ -1,0 +1,82 @@
+
+.login-page-background {
+    /* background: url(https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center; */
+    background-size: cover;
+    height: 100vh;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.25), 
+        rgba(0, 0, 0, 0.25)),
+        url(https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+        ;
+    /* background-image: url(https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
+ 
+    /* Set a specific height */
+    /* height: 350px; */
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+
+.user-page-background {
+    background-size: cover;
+    height: 100vh;
+
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.87), 
+        rgba(255, 255, 255, 0.87)),
+        url(https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+        ;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.title-row {
+    width: 100%;
+    text-align: center;
+}
+
+/* .div-height{
+    margin-top: 50px;
+} */
+
+.Login-Title {
+    font-size: 100px;
+    font-family: 'Rouge Script', cursive;
+    color: white;
+    text-shadow: 3px 2px red;
+    margin: 50px auto 50px;
+    text-align: center;
+    
+}
+
+.form-group {
+    color: white;
+    /* text-shadow: 3px 1px red; */
+}
+
+.btn-primary {
+    background: red;
+    border: red;
+    margin-top: 10px;
+    
+}
+
+.header-container {
+    background: white;
+    height: 65px;
+}
+
+.header-container-title {
+    margin: 0px, auto;
+}
