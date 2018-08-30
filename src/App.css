@@ -2,7 +2,7 @@
 .login-page-background {
     /* background: url(https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center; */
     background-size: cover;
-    height: 100vh;
+    height: 150vh;
 
     background: linear-gradient(
         rgba(0, 0, 0, 0.25), 
@@ -44,6 +44,7 @@
 .title-row {
     width: 100%;
     text-align: center;
+    height: 250px;
 }
 
 /* .div-height{
@@ -63,6 +64,7 @@
 .form-group {
     color: white;
     /* text-shadow: 3px 1px red; */
+    font-size: 25px;
 }
 
 .btn-primary {
@@ -80,3 +82,24 @@
 .header-container-title {
     margin: 0px, auto;
 }
+
+.DK-Logo {
+    margin: 20px auto;
+}
+
+.swap{
+    margin-left: 10px;
+    background: white;
+    color: red;
+    border: 5px red;
+}
+
+.menuBarLogo{
+    width: 125px;
+    margin: 5px auto;
+}
+
+.user-field-container{
+        height: 350px;
+        background: white;
+    }
