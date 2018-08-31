@@ -3,7 +3,6 @@ import UserPage from './components/userPage';
 import './App.css';
 import LogInPage from './components/logInPage'
 import SignUpPage from './components/signUpPage'
-import data from './components/constants'
 
 class App extends Component {
   state = {
@@ -70,15 +69,12 @@ class App extends Component {
 
     return (
       <div>
-        {/* <div> 
-          <UserPage />
-       </div> */}
-        {/* <UserPage/> */}
-        {
-          this.selectPage(this.state.pageName)
+      {/* <div><AddRestForm /></div> */}
+        
+      {this.selectPage(this.state.pageName)}
 
 
-        }
+        
 
       </div>
     );

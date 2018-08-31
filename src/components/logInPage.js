@@ -46,7 +46,7 @@ class LogInPage extends Component {
                 <div className='container'>
 
                     <div className="row title-row">
-                        <img className="DK-Logo" src="http://i6.photobucket.com/albums/y238/Lucas9/dateknightwhiteshadow.png" />
+                        <img className="DK-Logo" src="http://i6.photobucket.com/albums/y238/Lucas9/51946.png" />
                     </div>
 
                     <div className="row">
