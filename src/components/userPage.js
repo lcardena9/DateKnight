@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { func } from 'prop-types';
 import AddRestForm from './addRestForm';
 import UserPickLists from './randomPicked';
+import Favorites from './favorites';
 
 class UserPage extends Component {
 
@@ -12,6 +13,7 @@ class UserPage extends Component {
                 <div class="row">
                 <div className="navbar header-container">
                     <img className="menuBarLogo" src="http://i6.photobucket.com/albums/y238/Lucas9/dateknighttemplogo.png" />
+                    <button className="btn btn-primary sign-out" onClick={() => { this.props.changePage("logInPage") }}>Sign Out</button>
                 </div>
                 </div>
 
@@ -26,20 +28,22 @@ class UserPage extends Component {
                 {/* <div class="container-fluid"> */}
                     <div className="row userMapsRow">
                             <div class="col-lg-3 see-thru bevelBox1">
-                            <h3>Your Lists</h3>
-                            <UserPickLists/>
+                                <h3 className = "column-title">Your Lists</h3>
+                                <Favorites/>
                             </div>
+                            
                             <div class="col-lg-6 white bevelBox2">
-                                <h3> Knight's Out</h3>
+                                <h3 className="column-title"> Dining Hall</h3>
                                 <AddRestForm/>
                             </div>
+                            
                             <div class="col-lg-3 see-thru bevelBox1">
-                                <h3>User Suggestions</h3>
+                                <h3 className="column-title">Knight's Out</h3>
                             </div>
                     </div>
                 </div>
 
-            // </div>
+             
         
 
 

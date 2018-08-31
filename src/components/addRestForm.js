@@ -7,7 +7,7 @@ class AddRestForm extends Component {
 
 
  state = {
-   faveList: ["Two Birds", "PokePalace", "Chipotle", "McCormick & Schmidt's" , "Cheesecake Factory"],
+   faveList: ["Two Birds ", "PokePalace ", "Chipotle ", "McCormick & Schmick's " , "Cheesecake Factory "],
    faveList2: ["Steak", "seafood", "pasta"],
    name: '',
    randomPick: ''
@@ -50,6 +50,17 @@ randomPick = e => {
  render() {
    return (
         <div> 
+          <div className="display-restaurant-list">
+            <h2>Your Favorite Restaurants</h2>
+            <h5>You have {this.state.faveList.length} favorite restaurants</h5>
+          </div>
+
+          {/* <div className="date-display-list2">
+            <div className="display-restaurant-list2">
+              <h2>User 2 List</h2>
+              <h5>{this.state.faveList2.length} Favorite Restaurants</h5>
+            </div> */}
+
             <form onSubmit={this.formSubmit}>
                 <div className="form-group">
                     <label>Restaurant Name</label>
@@ -59,13 +70,18 @@ randomPick = e => {
             </form>
 
                 <div>
+                <h1>Enjoy your Knight Out at {this.state.randomPick}</h1>
+                </div>
+                <div>
                 <button type='submit' className='btn btn-primary' onClick={this.randomPick}>Random Pick</button> 
                 </div>
-               <div>
-                <h1>Enjoy your meal at {this.state.randomPick}</h1>
-                </div>
+            
 
+                <div className="date-display-list">
+          
           </div>
+          </div>
+
  
 
 

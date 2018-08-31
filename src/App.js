@@ -3,6 +3,7 @@ import UserPage from './components/userPage';
 import './App.css';
 import LogInPage from './components/logInPage'
 import SignUpPage from './components/signUpPage'
+import BadPage from './components/badPage'
 
 class App extends Component {
   state = {
@@ -48,7 +49,9 @@ class App extends Component {
           <UserPage changePage={this.changePage} />
         )
       default:
-        return <h1>BAD PAGE</h1>
+        return <BadPage 
+        changePage={this.changePage}
+        login={this.login}/>
     }
   }
 
