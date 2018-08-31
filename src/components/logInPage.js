@@ -46,7 +46,7 @@ class LogInPage extends Component {
                 <div className='container'>
 
                     <div className="row title-row">
-                        <img className="DK-Logo" src="http://i6.photobucket.com/albums/y238/Lucas9/51946.png" />
+                        <img className="DK-Logo" src="http://i6.photobucket.com/albums/y238/Lucas9/dateknightknightlogo.png" />
                     </div>
 
                     <div className="row">
@@ -56,7 +56,7 @@ class LogInPage extends Component {
 
 
                             {/* FORM CODE */}
-                            <div className="form-group">
+                            <div className="form-group form-group-top">
                                 <label>Email</label>
                                 <input type="text" value={this.state.email} onChange={this.onEmailChange} className="form-control" placeholder="" />
                             </div>

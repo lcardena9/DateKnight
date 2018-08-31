@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { func } from 'prop-types';
 import Restaurants from './restaurantList';
+import RandomPick from './randomPicked'
 
 class AddRestForm extends Component {
 
 
  state = {
    faveList: ["Two Birds", "PokePalace", "Chipotle", "McCormick & Schmidt's" , "Cheesecake Factory"],
+   faveList2: ["Steak", "seafood", "pasta"],
    name: '',
+   randomPick: ''
 }
 
 addToRest = () => {
@@ -34,8 +37,15 @@ addToRest = () => {
 
     
 randomPick = e => {
-    console.log(this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)]);
+    let random = this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)];
+    this.setState({ randomPick: random })
 }
+
+
+
+ randomPickedRestaurant = e => {
+ return (this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)])
+ }
 
  render() {
    return (
@@ -49,9 +59,13 @@ randomPick = e => {
             </form>
 
                 <div>
-                <button type='submit' className='btn btn-primary' onClick={this.randomPick}>Random Pick</button>
+                <button type='submit' className='btn btn-primary' onClick={this.randomPick}>Random Pick</button> 
                 </div>
-        </div>
+               <div>
+                <h1>Enjoy your meal at {this.state.randomPick}</h1>
+                </div>
+
+          </div>
  
 
 

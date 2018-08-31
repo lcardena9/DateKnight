@@ -26,7 +26,7 @@
 
 .user-page-background {
     background-size: cover;
-    height: 100vh;
+    height: 125vh;
 
     background: linear-gradient(
         rgba(255, 255, 255, 0.87), 
@@ -47,9 +47,6 @@
     height: 300px;
 }
 
-/* .div-height{
-    margin-top: 50px;
-} */
 
 .Login-Title {
     font-size: 100px;
@@ -77,6 +74,7 @@
 .header-container {
     background: white;
     height: 65px;
+    width: 100%;
 }
 
 .header-container-title {
@@ -84,8 +82,8 @@
 }
 
 .DK-Logo {
-    margin: 20px auto;
-    height: 100px
+    margin: 15px auto;
+    height: 350px
 }
 
 .swap{
@@ -106,4 +104,74 @@
     }
 .userMapsRow {
     height: 350px;
+}
+
+.form-group-top {
+    margin-top:40px
+}
+
+
+.user-title-row {
+    height: 250px;
+    margin-top: 50px;
+}
+
+.menu-bar-row {
+    width: 100%;
+    background-color: white
+}
+
+.bevelBox2
+{
+    width: 200px;
+    height: 450px;
+    
+    background: #ffffff;
+    
+    border: 1px solid #a3a3a3;    
+    
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+.bevelBox1
+{
+    width: 200px;
+    height: 450px;
+    
+    background: #ffffff34;
+    
+    border: 1px solid #a3a3a3;    
+    
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    border: 0px 0px 1px solid #a3a3a3;    
+    
+    -moz-box-shadow: inset 0px 0px 2px rgba(255, 255, 255, .4), inset 0x 0px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 0px 0px 2px rgba(255, 255, 255, .4), inset 0px 0px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 0px 0px 2px rgba(255, 255, 255, .4), inset 0px 0px 2px rgba(0, 0, 0, .4);
+}
+
+.main {
+    margin-top: 30px; 
+}
+
+.Title {
+    margin-top: 75px;
+    font-family: 'Tangerine', cursive;
+    font-size: 100px;
+    color: red;
+    text-shadow: 3px 2px #a3a3a3;
+    margin: 50px auto 50px;
+    text-align: center;
 }

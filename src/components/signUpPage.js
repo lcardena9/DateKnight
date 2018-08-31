@@ -75,7 +75,7 @@ class SignUpPage extends Component {
             <div className="login-page-background">
                 <div className='container'>
                     <div className="row title-row">
-                        <img className = "DK-Logo" src="http://i6.photobucket.com/albums/y238/Lucas9/dateknightwhiteshadow.png"/>
+                        <img className = "DK-Logo" src="http://i6.photobucket.com/albums/y238/Lucas9/dateknightknightlogo.png"/>
                     </div>
                     <div className="row">
                         <div class="col-md-4 div-height"></div>
@@ -83,7 +83,7 @@ class SignUpPage extends Component {
                     
 
                     {/* FORM CODE */}
-                    <div className="form-group">
+                    <div className="form-group form-group-top">
                                 <login onSubmit={this.formLogin}>
                                     <label>First Name</label>
                                     <input type="text" value={this.state.username} onChange={this.onUsernameChange} className="form-control" placeholder="" />
