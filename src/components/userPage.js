@@ -26,22 +26,27 @@ class UserPage extends Component {
                 </div>
 
                 {/* <div class="container-fluid"> */}
-                    <div className="row userMapsRow">
-                            <div class="col-lg-3 see-thru bevelBox1">
+
+                       <div class="row" className="white-background">
+                            {/* <div class="col-lg-6 white bevelBox2"> */}
+                                <AddRestForm/>
+                            {/* </div> */}
+                            </div>
+                                <div class="row">
+                            {/* <div class="col-lg-3 see-thru bevelBox1"> */}
                                 <h3 className = "column-title">Your Lists</h3>
                                 <Favorites/>
-                            </div>
+                                </div>
+                            {/* </div> */}
+                    
                             
-                            <div class="col-lg-6 white bevelBox2">
-                                <h3 className="column-title"> Dining Hall</h3>
-                                <AddRestForm/>
-                            </div>
-                            
-                            <div class="col-lg-3 see-thru bevelBox1">
+                            <div class="row">
+                            {/* <div class="col-lg-3 see-thru bevelBox1"> */}
                                 <h3 className="column-title">Knight's Out</h3>
+                            {/* </div> */}
                             </div>
+
                     </div>
-                </div>
 
              
         

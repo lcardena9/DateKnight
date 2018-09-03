@@ -168,7 +168,7 @@
 
 .Title {
     margin-top: 75px;
-    font-family: 'Tangerine', cursive;
+    font-family: 'Mukta', sans-serif;
     font-size: 100px;
     color: red;
     text-shadow: 3px 2px #a3a3a3;
@@ -177,7 +177,7 @@
 }
 
 .column-title{
-    font-family: 'Tangerine', cursive;
+    font-family: 'Mukta', sans-serif;
     font-size: 50px;
     color: red;
     text-shadow: 3px 2px #a3a3a3;
@@ -198,3 +198,71 @@
     overflow-y: scroll; 
     height: 100%;
 }
+
+.white-background {
+    background: white
+}
+
+.display-restaurant-list {
+    text-align: center;
+}
+
+.save-a-fave {
+    padding:0px 100px;
+}
+
+
+.user-page-titles {
+    text-align: center;
+    padding: 20px
+}
+
+.random-picked-restaurant {
+    font-family: 'Mukta', sans-serif;
+    font-size: 75px;
+    color: red;
+    text-shadow: 3px 2px #a3a3a3;
+    text-align: center;
+}
+
+.center-button {
+    text-align: center
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.divided {
+    display: flex;
+    align-items: center;
+  }
+  
+  .divider {
+    flex-grow: 1;
+    border-bottom: 1px solid lightgrey;
+    margin: 40px;
+  }
