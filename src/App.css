@@ -125,14 +125,12 @@
 {
     width: 200px;
     height: 450px;
-    
+    padding-top:20px;
     background: #ffffff;
     
-    border: 1px solid #a3a3a3;    
+   
     
-    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+   
 }
 
 .bevelBox1
@@ -142,11 +140,9 @@
     
     background: #ffffff34;
     
-    border: 1px solid #a3a3a3;    
+
     
-    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+
 }
 
 .navbar {
@@ -207,9 +203,7 @@
     text-align: center;
 }
 
-.save-a-fave {
-    padding:0px 100px;
-}
+
 
 
 .user-page-titles {

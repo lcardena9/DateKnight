@@ -3,7 +3,7 @@ import { func } from 'prop-types';
 import Restaurants from './restaurantList';
 import RandomPick from './randomPicked'
 
-class AddRestForm extends Component {
+class RandomGen extends Component {
 
 
   state = {
@@ -53,35 +53,15 @@ class AddRestForm extends Component {
 
 
         <div>
-          <h1 className="user-page-titles" >Enjoy your Knight Out at </h1>
+          <h3 className="user-page-titles" >Enjoy your Knight Out at </h3>
           <h1 className="user-page-titles random-picked-restaurant">{this.state.randomPick}</h1>
         </div>
         <div className='center-button'>
           <button type='submit' className='btn btn-primary' onClick={this.randomPick}>Random Pick</button>
         </div>
 
-        <p class="divided">
-          <span>  </span>
-          <span class="divider"></span>
-          <span>  </span>
-        </p>
-
-        <div className="display-restaurant-list">
-          <h2>Your Favorite Restaurants</h2>
-          <h5>You have {this.state.faveList.length} favorite restaurants</h5>
-        </div>
-
-        <form onSubmit={this.formSubmit}>
-          <div className="form-group save-a-fave center-button">
-            <label>Restaurant Name</label>
-            <input type="text" value={this.state.name} onChange={this.onfaveListChange} className='form-control' placeholder='Enter Restaraunt' />
-            <button type='submit' className='btn btn-primary'>Save a Fave</button>
-          </div>
-        </form>
-
-        <div className="date-display-list">
-
-        </div>
+   
+   
       </div>
 
 
@@ -98,7 +78,7 @@ class AddRestForm extends Component {
   }
 }
 
-AddRestForm.propTypes = {
+RandomGen.propTypes = {
   addToRest: func,
 }
-export default AddRestForm;
+export default RandomGen;

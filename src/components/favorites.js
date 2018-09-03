@@ -30,13 +30,13 @@ class Favorites extends Component {
                        Restaurant: In-N-Out Burger,
            Distance: 1.3 miles,
            Hours: OPEN: 10:30 AM - CLOSES: 1 PM,
-           Address: 2895 Park Ave, Tustin, CA 9278
+           Address: 2895 Park Ave, Tustin, CA 9278 <br></br>
                    <img src='https://mallmaverick.cdn.speedyrails.net/system/stores/store_fronts/000/028/707/original/kings_fish-house_500px.jpg?1464969880' heigth='100' width='100' />
                        <li>
                            Restaurant: King’s Fish House,
                            Distance: 7.4 miles,
                            Hours: OPEN: 11 AM - CLOSES: 11 PM,
-                           Address: 1521 W. Katella Ave, Orange, CA 92867
+                           Address: 1521 W. Katella Ave, Orange, CA 92867<br></br>
        </li><li>
                            <img src='https://getbento.imgix.net/accounts/6ee3aaa6a365ba8da9a520b9da02b32d/media/accounts/media/MUFiwDlQTfWBLqwTjj9E_LOGO.png?w=1200&fit=fill&auto=compress,format&h=600&bg=EDEDF1&pad=100' heigth='100' width='100' />
                            Restaurant: Flame Broiler,

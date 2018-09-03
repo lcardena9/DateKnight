@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { func } from 'prop-types';
-import AddRestForm from './addRestForm';
+import RandomGen from './RandomGen';
 import UserPickLists from './randomPicked';
 import Favorites from './favorites';
+import AddFaveList from './addFaveList'
 
 class UserPage extends Component {
 
     render() {
         return (
             <div className="user-page-background container-fluid">
-                
+                <div>
                 <div class="row">
                 <div className="navbar header-container">
                     <img className="menuBarLogo" src="http://i6.photobucket.com/albums/y238/Lucas9/dateknighttemplogo.png" />
@@ -24,30 +25,30 @@ class UserPage extends Component {
                         </div>
                     </div>
                 </div>
-
-                {/* <div class="container-fluid"> */}
-
-                       <div class="row" className="white-background">
-                            {/* <div class="col-lg-6 white bevelBox2"> */}
-                                <AddRestForm/>
-                            {/* </div> */}
+                
+                   
+                   {/* <div class="container-fluid"> */}
+                       <div class="row">
+                       
+                           
+                            <div class="col-lg-3 white bevelBox2">
+                            <h3 className = "column-title">Your Faves</h3>
+                                <AddFaveList/>
                             </div>
-                                <div class="row">
-                            {/* <div class="col-lg-3 see-thru bevelBox1"> */}
-                                <h3 className = "column-title">Your Lists</h3>
-                                <Favorites/>
-                                </div>
-                            {/* </div> */}
-                    
                             
-                            <div class="row">
-                            {/* <div class="col-lg-3 see-thru bevelBox1"> */}
-                                <h3 className="column-title">Knight's Out</h3>
-                            {/* </div> */}
+                            <div class="col-lg-6 see-thru bevelBox2">
+                                <h3 className = "column-title">Let's Pick</h3>
+                                <RandomGen/>
                             </div>
-
+                    
+                            <div class="col-lg-3 see-thru bevelBox2">
+                                <h3 className="column-title">Knight's Out</h3>
+                                <Favorites/>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-
+                    // </div>
              
         
 
