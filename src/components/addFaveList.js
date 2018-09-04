@@ -8,7 +8,6 @@ class AddFaveList extends Component {
 
   state = {
     faveList: ["Two Birds ", "PokePalace ", "Chipotle ", "McCormick & Schmick's ", "Cheesecake Factory "],
-    faveList2: ["Steak", "seafood", "pasta"],
     name: '',
     randomPick: ''
   }
@@ -37,7 +36,7 @@ class AddFaveList extends Component {
 
 
   randomPick = e => {
-    let random = this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)];
+    let random = this.props.faveList[Math.floor(Math.random() * this.props.faveList.length)];
     this.setState({ randomPick: random })
   }
 
@@ -53,6 +52,9 @@ class AddFaveList extends Component {
 
         <div className="display-restaurant-list">
           <h5>You have {this.state.faveList.length} favorite restaurants</h5>
+          <ol className="favelist">
+            {this.state.faveList.map(restaurant => <li key={restaurant}>{restaurant}</li>)}
+          </ol>
         </div>
 
         <form onSubmit={this.formSubmit}>

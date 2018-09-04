@@ -19,6 +19,7 @@ class App extends Component {
         password: '123'
       }
     ],
+    faveList: ["Two Birds ", "PokePalace ", "Chipotle ", "McCormick & Schmick's ", "Cheesecake Factory "],
     goodLogin: false
   }
 

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { func } from 'prop-types';
 import Restaurants from './restaurantList';
-import RandomPick from './randomPicked'
+import RandomPick from './randomPicked';
+import AddFaveList from './addFaveList';
 
 class RandomGen extends Component {
 
