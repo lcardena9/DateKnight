@@ -33,12 +33,16 @@ class UserPage extends Component {
                            
                             <div class="col-lg-3 white bevelBox2">
                             <h3 className = "column-title">Your Faves</h3>
-                                <AddFaveList/>
+                                <AddFaveList faveList={this.props.faveList}
+                                addToFavelist={this.props.addToFavelist}/>
                             </div>
                             
                             <div class="col-lg-6 see-thru bevelBox2">
                                 <h3 className = "column-title">Let's Pick</h3>
-                                <RandomGen/>
+                                <RandomGen 
+                                    chooseRandomRest={this.props.chooseRandomRest}
+                                    randomPick={this.props.randomPick}
+                                />  
                             </div>
                     
                             <div class="col-lg-3 see-thru bevelBox2">

@@ -8,8 +8,8 @@ class RandomGen extends Component {
 
 
   state = {
-    faveList: ["Two Birds ", "PokePalace ", "Chipotle ", "McCormick & Schmick's ", "Cheesecake Factory "],
-    faveList2: ["Steak", "seafood", "pasta"],
+    // faveList: ["Two Birds ", "PokePalace ", "Chipotle ", "McCormick & Schmick's ", "Cheesecake Factory "],
+    // faveList2: ["Steak", "seafood", "pasta"],
     name: '',
     randomPick: ''
   }
@@ -37,16 +37,16 @@ class RandomGen extends Component {
   }
 
 
-  randomPick = e => {
-    let random = this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)];
-    this.setState({ randomPick: random })
-  }
+  // randomPick = e => {
+  //   let random = this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)];
+  //   this.setState({ randomPick: random })
+  // }
 
 
 
-  randomPickedRestaurant = e => {
-    return (this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)])
-  }
+  // randomPickedRestaurant = e => {
+  //   return (this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)])
+  // }
 
   render() {
     return (
@@ -55,10 +55,10 @@ class RandomGen extends Component {
 
         <div>
           <h3 className="user-page-titles" >Enjoy your Knight Out at </h3>
-          <h1 className="user-page-titles random-picked-restaurant">{this.state.randomPick}</h1>
+          <h1 className="user-page-titles random-picked-restaurant">{this.props.randomPick}</h1>
         </div>
         <div className='center-button'>
-          <button type='submit' className='btn btn-primary' onClick={this.randomPick}>Random Pick</button>
+          <button type='submit' className='btn btn-primary' onClick={this.props.chooseRandomRest}>Random Pick</button>
         </div>
 
    

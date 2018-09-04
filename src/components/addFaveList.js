@@ -7,7 +7,6 @@ class AddFaveList extends Component {
 
 
   state = {
-    faveList: ["Two Birds ", "PokePalace ", "Chipotle ", "McCormick & Schmick's ", "Cheesecake Factory "],
     name: '',
     randomPick: ''
   }
@@ -25,35 +24,37 @@ class AddFaveList extends Component {
 
   formSubmit = e => {
     e.preventDefault();
-    let newRest = [...this.state.faveList, this.state.name]
+    // let newRest = [...this.state.faveList, this.state.name]
+    // Invoke a function that lives in app.js which will update our faves to include the new entry
+
+    this.props.addToFavelist(this.state.name);
 
     this.setState({
-      faveList: newRest,
       name: ''
     });
 
   }
 
 
-  randomPick = e => {
-    let random = this.props.faveList[Math.floor(Math.random() * this.props.faveList.length)];
-    this.setState({ randomPick: random })
-  }
+  // randomPick = e => {
+  //   let random = this.props.faveList[Math.floor(Math.random() * this.props.faveList.length)];
+  //   this.setState({ randomPick: random })
+  // }
 
 
 
-  randomPickedRestaurant = e => {
-    return (this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)])
-  }
+  // randomPickedRestaurant = e => {
+  //   return (this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)])
+  // }
 
   render() {
     return (
       <div>
 
         <div className="display-restaurant-list">
-          <h5>You have {this.state.faveList.length} favorite restaurants</h5>
+          <h5>You have {this.props.faveList.length} favorite restaurants</h5>
           <ol className="favelist">
-            {this.state.faveList.map(restaurant => <li key={restaurant}>{restaurant}</li>)}
+            {this.props.faveList.map(restaurant => <li key={restaurant}>{restaurant}</li>)}
           </ol>
         </div>
 

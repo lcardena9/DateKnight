@@ -9,6 +9,7 @@ class App extends Component {
   state = {
     data: [],
     pageName: 'logInPage',
+    faveList: ["Two Birds ", "PokePalace ", "Chipotle ", "McCormick & Schmick's ", "Cheesecake Factory "],
     users: [
       {
         email: 'abc@gmail.com',
@@ -19,8 +20,8 @@ class App extends Component {
         password: '123'
       }
     ],
-    faveList: ["Two Birds ", "PokePalace ", "Chipotle ", "McCormick & Schmick's ", "Cheesecake Factory "],
-    goodLogin: false
+    goodLogin: false,
+    randomPick: ""
   }
 
 
@@ -31,6 +32,20 @@ class App extends Component {
     })
   }
 
+  addToFavelist = (newEntry) => {
+    let tempFaves = [...this.state.faveList, newEntry];
+
+    this.setState({
+      faveList: tempFaves
+    });
+
+  }
+
+  chooseRandomRest = e => {
+    let randomPick = this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)];
+    console.log(randomPick);
+    this.setState({ randomPick: randomPick })
+  }
 
   selectPage = (page) => {
     switch (page) {
@@ -47,7 +62,12 @@ class App extends Component {
         )
       case 'userPage':
         return (
-          <UserPage changePage={this.changePage} />
+          <UserPage changePage={this.changePage}
+          chooseRandomRest={this.chooseRandomRest} 
+          randomPick={this.state.randomPick}
+          faveList={this.state.faveList}
+          addToFavelist={this.addToFavelist}
+          />
         )
       default:
         return <BadPage 
