@@ -2,7 +2,7 @@
 .login-page-background {
     
     background-size: cover;
-    height: 150vh;
+    height: 100vh;
 
     background: linear-gradient(
         rgba(0, 0, 0, 0.25), 
@@ -23,7 +23,7 @@
 
 .user-page-background {
     background-size: cover;
-    height: 125vh;
+    height: 100vh;
 
     background: linear-gradient(
         rgba(255, 255, 255, 0.87), 

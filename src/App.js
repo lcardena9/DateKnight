@@ -25,13 +25,14 @@ class App extends Component {
   }
 
 
-
+//function to change the page
   changePage = name => {
     this.setState({
       pageName: name
     })
   }
 
+  //take a new restaurant that the user input and add the saved favorite lists
   addToFavelist = (newEntry) => {
     let tempFaves = [...this.state.faveList, newEntry];
 
@@ -41,12 +42,14 @@ class App extends Component {
 
   }
 
+  //function to choose a restaurant out of the array at random, chooses and index and gives value
   chooseRandomRest = e => {
     let randomPick = this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)];
     console.log(randomPick);
     this.setState({ randomPick: randomPick })
   }
 
+// switch case, directs to page based off action, also passes down props
   selectPage = (page) => {
     switch (page) {
       case 'logInPage':
@@ -76,7 +79,7 @@ class App extends Component {
     }
   }
 
-  // user: object { email, password } => undefined
+  // user: object { email, password } => undefined -- log in function, matches against current array
   login = user => {
     let users = this.state.users;
     for (let i = 0; i < users.length; i++) {
@@ -89,6 +92,7 @@ class App extends Component {
     this.changePage('badPage')
   }
 
+  //show the app
   render() {
 
     return (

@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { func } from 'prop-types';
-import SignUpPage from './signUpPage';
-import UserPage from './userPage';
-import data from './constants';
+
 
 class LogInPage extends Component {
 

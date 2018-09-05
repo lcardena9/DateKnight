@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { func } from 'prop-types';
-import Restaurants from './restaurantList';
-import RandomPick from './randomPicked'
 
 class AddFaveList extends Component {
 
@@ -11,12 +9,6 @@ class AddFaveList extends Component {
     randomPick: ''
   }
 
-  addToRest = () => {
-    let newRest = [...this.state.faveList, this.state.name]
-    this.setState({
-      faveList: newRest
-    })
-  }
 
   onfaveListChange = e => {
     this.setState({ name: e.target.value })
@@ -36,31 +28,20 @@ class AddFaveList extends Component {
   }
 
 
-  // randomPick = e => {
-  //   let random = this.props.faveList[Math.floor(Math.random() * this.props.faveList.length)];
-  //   this.setState({ randomPick: random })
-  // }
-
-
-
-  // randomPickedRestaurant = e => {
-  //   return (this.state.faveList[Math.floor(Math.random() * this.state.faveList.length)])
-  // }
-
   render() {
     return (
       <div>
 
         <div className="display-restaurant-list">
-          <h5>You have {this.props.faveList.length} favorite restaurants</h5>
+          <h5>You have {this.props.faveList.length} favorite restaurants</h5> {/*function to show length of the array*/}
           <ol className="favelist">
-            {this.props.faveList.map(restaurant => <li key={restaurant}>{restaurant}</li>)}
+            {this.props.faveList.map(restaurant => <li key={restaurant}>{restaurant}</li>)} {/*grabs index and displays value in the list*/}
           </ol>
         </div>
 
-        <form onSubmit={this.formSubmit}>
+        <form onSubmit={this.formSubmit}> 
           <div className="form-group save-a-fave center-button">
-            <input type="text" value={this.state.name} onChange={this.onfaveListChange} className='form-control' placeholder='Enter New Restaraunt' />
+            <input type="text" value={this.state.name} onChange={this.onfaveListChange} className='form-control' placeholder='Enter New Restaraunt' /> {/*takes input from the user submit, onfave adds to our favelist*/}
             <button type='submit' className='btn btn-primary'>Save a Fave</button>
           </div>
         </form>
